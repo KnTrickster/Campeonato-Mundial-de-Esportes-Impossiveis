@@ -58,6 +58,6 @@ Este projeto foi desenvolvido com foco acadêmico, visando demonstrar boas prát
 
 ## 👤 Autores
 
-Gustavo Borges
-Kevin Torquato
-Kleber Kauã
+- Gustavo Borges
+- Kevin Torquato
+- Kleber Kauã
