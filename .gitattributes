@@ -5,11 +5,11 @@
 README.md linguist-documentation=true
 
 #Mapeia os arquivos com texto e explicações para pontuarem nas linguagens corretas
-"Cursor.md"                                   linguist-language=SQL
-"Consultas da AV2.md"                         linguist-language=SQL
-"Função agregada.md"                         linguist-language=SQL
-"Modelo Conceitual Esportes Impossiveis.md" linguist-language=Mermaid
-"Modelo Físico Esportes Impossiveis.md"     linguist-language=SQL
-"Modelo Lógico Esportes Impossiveis.md"     linguist-language=Mermaid
-"Procedure de Relatório.md"                 linguist-language=SQL
-"Procedures.md"                               linguist-language=SQL
+"Cursor.md"                                   linguist-language=SQL linguist-detectable=true
+"Consultas da AV2.md"                         linguist-language=SQL linguist-detectable=true
+"Função agregada.md"                         linguist-language=SQL linguist-detectable=true
+"Modelo Conceitual Esportes Impossiveis.md" linguist-language=Mermaid linguist-detectable=true
+"Modelo Físico Esportes Impossiveis.md"     linguist-language=SQL linguist-detectable=true
+"Modelo Lógico Esportes Impossiveis.md"     linguist-language=Mermaid linguist-detectable=true
+"Procedure de Relatório.md"                 linguist-language=SQL linguist-detectable=true
+"Procedures.md"                               linguist-language=SQL linguist-detectable=true
