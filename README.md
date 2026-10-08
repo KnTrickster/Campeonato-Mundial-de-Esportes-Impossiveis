@@ -33,8 +33,11 @@ O projeto está dividido em:
 - **Modelo Físico**  
   Implementação em SQL com tabelas, constraints e índices
 
+- **Consultas SQL**
+  Consultas analíticas para exploração e avaliação dos dados 
+
 - **Procedures**  
-  Rotinas auxiliares para manipulação de dados
+  Rotinas em PL/SQL para manipulação e processamento de dados, geração de relatórios e cálculos agregados.
 
 - **Imagens**  
   Diagrama do Modelo Conceitual 
@@ -42,6 +45,26 @@ O projeto está dividido em:
   Diagrama do Modelo Lógico
   ![Modelo Lógico](./Imagem%20Modelo%20Lógico.png)
 ---
+
+## ⚙️ Recursos e Implementações em PL/SQL
+
+Além da modelagem e implementação do banco de dados, o projeto conta com consultas e recursos avançados em Oracle PL/SQL:
+
+**📊 Cursor Explícito com Parâmetro**
+
+Consulta e exibe o ranking oficial de uma competição específica, recuperando colocação, participante, origem, esporte, fase, pontuação e observações. O cursor percorre os resultados ordenados por colocação e utiliza DBMS_OUTPUT para apresentar os dados de forma organizada, além de informar o total de colocados e tratar possíveis erros durante a execução.
+
+**🔎 Consultas SQL da AV2**
+
+Reúne consultas analíticas para exploração e avaliação dos dados do campeonato. As consultas identificam os atletas com maior pontuação, modalidades com melhores médias, atletas sem resultados registrados e competições de alta intensidade, além de apresentar um quadro geral das competições. Também são analisados eventos sem patrocínio ativo e patrocinadores com maiores investimentos em eventos encerrados, utilizando JOINs, agregações (COUNT, SUM, AVG, MAX), subconsultas, HAVING, ordenação e filtros.
+
+**⚖️ Função Agregada de Média Ponderada**
+
+Implementa uma função agregada personalizada em Oracle para calcular a média das pontuações considerando pesos diferentes para cada fase da competição. A solução utiliza um tipo objeto com o ciclo ODCIAggregate (Initialize, Iterate, Merge e Terminate), acumulando a soma ponderada e os pesos das fases. Ao final, a função retorna a média ponderada arredondada, permitindo comparar o desempenho dos atletas com a média simples de suas pontuações.
+
+**📋 Procedure de Relatório de Evento**
+
+Gera um relatório consolidado do desempenho das competições de um evento específico. A procedure valida a existência do evento, retorna os dados das competições por meio de um SYS_REFCURSOR e calcula informações como quantidade de participantes, pontuação máxima e média, esporte e número de árbitros. Também identifica competições sem árbitros e informa o valor total de patrocínios ativos do evento. A execução demonstra o consumo do REF CURSOR linha a linha e a formatação dos resultados com DBMS_OUTPUT.
 
 ## 🚀 Tecnologias Utilizadas
 
