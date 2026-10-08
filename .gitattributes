@@ -1,3 +1,9 @@
+# 1. Aplica a regra geral para todos os arquivos .md
+*.md linguist-documentation=false
+
+# 2. Abre uma EXCEÇÃO para o README voltar a ser tratado apenas como documentação oculta
+README.md linguist-documentation=true
+
 #Mapeia os arquivos com texto e explicações para pontuarem nas linguagens corretas
 "Cursor.md"                                   linguist-language=SQL
 "Consultas da AV2.md"                         linguist-language=SQL
